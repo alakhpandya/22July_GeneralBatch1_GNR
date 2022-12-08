@@ -1,0 +1,17 @@
+/* Tomorrow */
+@font-face{
+    font-family: "Riddhi's fonts";
+    src: url('/fonts/Tomorrow/Tomorrow-Regular.ttf');
+}
+
+/* Arvo */
+@font-face {
+    font-family: Hemangini;
+    src: url('/fonts/Arvo/Arvo-Regular.ttf');
+}
+
+/* Oxygen */
+@font-face {
+    font-family: Mithil;
+    src: url('/fonts/Oxygen/Oxygen-Regular.ttf');
+}
