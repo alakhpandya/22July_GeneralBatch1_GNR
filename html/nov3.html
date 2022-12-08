@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form align="center" bgcolor="lightgreen" action="">
+        <div>
+            Chose color for your T-shirt: <input type="color" name="" id="">
+        </div>
+        <div>
+            Enter date of journey: <input type="date" name="" id="">
+            <br>
+            Enter your month/year of passing: <input type="month" name="" id="">
+            <br>
+            Your stay with us: <input type="week" name="" id="">
+            <br>
+            Time of departure: <input type="time" name="" id="">
+            <br>
+            <input type="datetime" name="" id="">
+            <input type="datetime-local" name="" id="">
+        </div>
+        <div>
+            Upload your photo: <input type="file" name="" id="">
+        </div>
+        <div>
+            How did you come to know about us?
+            <br><input type="checkbox" name="" id=""> Paper Ad
+            <br><input type="checkbox" name="" id=""> Facebook
+            <br><input type="checkbox" name="" id=""> Youtube
+            <br><input type="checkbox" name="" id=""> Reference
+            <br><input onclick="document.getElementById('hidden').setAttribute('type', 'text')" type="checkbox" name="" id=""> Other
+            <input id="hidden" type="hidden" name="" placeholder="Please mention how">
+        </div>
+
+        <div>
+            Adults <input type="number" name="" id="">
+            <br>
+            Children <input min="0" max="6" type="number" name="" id="">
+            <br>
+            Infants <input type="number" name="" id="">
+        </div>
+        <br>
+        <div>
+            Your Whatsapp Number: <input type="tel" name="" id="">
+        </div>
+        <div>
+            <input type="radio" name="gender" id="male"> <label for="male">Male</label>
+            <input type="radio" name="gender" id="female"> <label for="female">Female</label>
+            <input type="radio" name="gender" id="other"> <label for="other">Others</label>
+        </div>
+        <div>
+            <p>Chose your budget:</p>
+            <!-- 5000 <input min="5000" max="25000" type="range" name="budget" id=""> 25000 -->
+            <input type="range" value="10000" step="1000" min="5000" max="25000" oninput="this.nextElementSibling.value = this.value">
+            <output>10000</output>
+        </div>
+
+
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+</html>
+
+<!-- Next Class: remaining form tags from input:url -->

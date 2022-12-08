@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    a{
+        color: blue;
+    }
+    div a{
+        color: red;
+    }
+    div li a{
+        color: green;
+    }
+
+    div > a{
+        color: purple;
+    }
+
+    div + a{
+        background-color: black;
+    }
+
+    a, li{
+        background-color: aqua;
+    }
+
+    /* li:nth-child(9){
+        background-color: lightgreen;
+    } */
+
+    li:nth-child(3){
+        background-color: black;
+    }
+
+    li:nth-child(even){
+        background-color: grey;
+    }
+
+    li:nth-child(odd){
+        background-color: yellow;
+    }
+    li:nth-child(3n-5){
+        background-color: white;
+    }
+</style>
+<body>
+    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, officia?</h1>
+    <div>
+        <ul>
+            <li><a href="#">Lorem, ipsum dolor.</a></li>
+            <li><a href="#">Hic, repellendus quam.</a></li>
+            <li><a href="#">Laudantium, dolore! Porro!</a></li>
+            <li><a href="#">Incidunt, facilis. Et.</a></li>
+            <li><a href="#">Vitae, laborum sapiente!</a></li>
+            <li><a href="#">Harum, odio fugiat.</a></li>
+            <li><a href="#">Voluptate, iure natus.</a></li>
+            <li><a href="#">Et, sit? Corrupti?</a></li>
+            <li><a href="#">Illum, cumque quos!</a></li>
+            <li><a href="#">Dolorum, impedit quisquam.</a></li>
+            <li><a href="#">Harum, odio fugiat.</a></li>
+            <li><a href="#">Voluptate, iure natus.</a></li>
+            <li><a href="#">Et, sit? Corrupti?</a></li>
+            <li><a href="#">Illum, cumque quos!</a></li>
+            <li><a href="#">Dolorum, impedit quisquam.</a></li>
+        </ul>
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+    </div>
+    <a href="#">Link 3</a>
+    <a href="#">Link 4</a>
+    <div>
+        <ul>
+            <a href="#">
+                <li>Lorem ipsum dolor sit amet.</li>
+            </a>
+            <a href="#">
+                <li>Blanditiis expedita quasi nesciunt sint?</li>
+            </a>
+            <a href="#">
+                <li>Voluptatem est quidem repellendus consequuntur.</li>
+            </a>
+            <a href="#">
+                <li>Esse officia veniam necessitatibus iure.</li>
+            </a>
+            <a href="#">
+                <li>Provident, libero. Modi, quae quia!</li>
+            </a>
+        </ul>
+    </div>
+</body>
+</html>
+<!-- 
+    Next class: selecting by attribute, pseudo classes
+ -->
