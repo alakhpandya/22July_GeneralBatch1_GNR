@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .container{
+        border: 2px solid red;
+        width: 500px;
+        height: 500px;
+        margin: auto;
+    }
+    .boxes {
+        border: 2px solid green;
+        height: 50px;
+        width: 100px;
+    }
+
+    /* Margin */
+    #box1 {
+        margin-left: 10px;
+        margin-bottom: 30px;
+        margin-top: 40px;
+        margin-right: 50px;
+    }
+
+    /* Margins overlap in Block Elements */
+    #box2 {
+        margin-top: 50px;
+    }
+
+    #box3 {
+        /* Equal margin all sides */
+        margin: 20px;
+    }
+
+    #box4 {
+        /* margin: top-bottom left-right */
+        margin: 50px 100px;
+    }
+
+    #box5 {
+        margin: 30px 50px 70px 100px;
+    }
+
+    #box6 {
+        margin: 20px 50px 100px;
+    }
+
+    #box7 {
+        /* margin: 1rem;
+        margin-bottom: 2rem; */
+        margin: 1rem 1rem 2rem 1rem;
+    }
+
+    #box8 {
+        /* top: 1rem, left:2rem, bottom: 0, right: 0 */
+        margin: 1rem 2rem;
+    }
+
+    /* Margins do not overlap in Inline Elements */
+    #btn1 {
+        margin-right: 20px;
+    }
+
+    #btn2 {
+        margin-left: 20px;
+    }
+
+    /* Works ONLY WITH BLOCK ELEMENTS */
+    #box9 {
+        /* margin-left: 50%; */
+        /* margin: auto; */
+        /* margin-left: auto;
+        margin-right: auto; */
+
+        /* margin: auto; will ONLY WORK HORIZONTALLY */
+
+        margin: 3rem auto;
+
+
+        /* Padding */
+
+        /* 
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px; 
+        */
+
+        padding: 250px;
+        /* padding: 1rem 2rem; */
+        /* padding: 1rem 2rem 3rem 4rem; */
+        /* padding: 1rem 2rem 3rem; */
+    }
+</style>
+
+<body>
+    <!-- <div class="container">
+        <div class="boxes" id="box1"></div>
+        <div class="boxes" id="box2"></div>
+        <div class="boxes" id="box3"></div>
+        <div class="boxes" id="box4"></div>
+        <div class="boxes" id="box5"></div>
+        <div class="boxes" id="box6"></div>
+        <div class="boxes" id="box7"></div>
+        <div class="boxes" id="box8"></div>
+    </div> -->
+
+    <div class="container">
+        <button id="btn1">Button 1</button>
+        <button id="btn2">Button 2</button>
+
+        <p>my paragraph</p>
+        <p>your paragraph</p>
+        <div class="boxes" id="box9">Box 9</div>
+        <div class="boxes" id="box10">Box 10</div>
+    </div>
+</body>
+
+</html>
+
+<!-- Next Lecture: Overflow, Box-sizing, Meaning of * -->
