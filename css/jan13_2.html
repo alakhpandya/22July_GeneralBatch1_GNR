@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* Complete CSS Reset */
+    *, ::before, ::after{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    /* Pseudo Elements: ::before & ::after */
+    .items{
+        /* border: 2px solid purple; */
+        margin: 0.8rem auto;
+        width: 200px;
+        box-sizing: border-box;
+    }
+    #item1{
+        background-color: rgb(246, 246, 133);
+        color: brown;
+        /* width: 240px; */
+    }
+    #item2{
+        background-color: blueviolet;
+        color: #fff;
+        padding: 0 10px;
+        border: 10px red solid;
+    }
+    #item3{
+        background-color: brown;
+        color: lightgoldenrodyellow;
+        /* padding: 0 1.3rem; */
+        padding: 0 3.5vw;
+        border: navy 0.7em solid;
+    }
+
+    /* content-box vs. border-box */
+    /* 
+        box-size = content-size
+        box-size = content size + padding + border
+        box-sizing: border-box
+    */
+</style>
+<body>
+    <div class="items" id="item1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, modi quos fuga minus fugit ab quo tempore. Sit, mollitia non.</div>
+    <div class="items" id="item2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, modi quos fuga minus fugit ab quo tempore. Sit, mollitia non.</div>
+    <div class="items" id="item3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, modi quos fuga minus fugit ab quo tempore. Sit, mollitia non.</div>
+    <!-- <div class="items" id="item4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, modi quos fuga minus fugit ab quo tempore. Sit, mollitia non.</div> -->
+    <button>Button</button>
+</body>
+</html>
