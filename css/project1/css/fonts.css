@@ -1,0 +1,5 @@
+/* ----------------------------- Open Sans ----------------------------- */
+@font-face {
+    font-family: "Open Sans";
+    src: url('/css/fonts/open_sans/OpenSans-VariableFont_wdth\,wght.ttf');
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *, ::before, ::after{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    a{
+        text-decoration: none;
+    }
+    ul{
+        list-style-type: none;
+    }
+
+    .navbar{
+        background-color: darkolivegreen;
+        height: 10vh;
+        /* text-align: center; */
+        /* padding-top: 2vh; */
+        /* float */
+        /* padding: 0 2rem; */
+        display: flex;
+        /* Following properties work only with display:flex */
+        /* Horizontally align */
+        justify-content: center;
+        /* justify-content: flex-start; */
+        /* justify-content: flex-end; */
+        /* justify-content: space-between; */
+        /* justify-content: space-evenly; */
+        /* justify-content: space-around; */
+
+        gap: 2rem;
+
+        /* Vertically align */
+        align-items: center;
+        /* align-items: flex-start; */
+        /* align-items: flex-end; */
+    }
+    .nav-item{
+        /* border: 1px solid red; */
+        /* display: inline; */
+        /* padding: 1rem; */
+        /* margin-right: 1rem; */
+    }
+    .nav-link{
+        /* border: 1px solid blue; */
+        color: white;
+    }
+</style>
+<body>
+    <ul class="navbar">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Career</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Environment</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+    </ul>
+</body>
+</html>

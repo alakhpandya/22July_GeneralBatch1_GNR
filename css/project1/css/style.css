@@ -1,0 +1,93 @@
+@import url('fonts.css');
+
+/* ----------------------------- CSS Reset ----------------------------- */
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+    Colors:
+    Base color (blue): #0032a0
+    Hover color: #8397c6 
+    
+*/
+/* ----------------------------- Global Classes & Styling ----------------------------- */
+
+body{
+    font-family: "Open Sans", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+
+
+
+/* ----------------------------- Navbar ----------------------------- */
+
+.navbar{
+    /* background-color: lightcoral; */
+    height: 70px;
+    padding: 0 12vw 0 14vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-left{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+.nav-brand-logo{
+    height: 50px;
+}
+.nav-manu{
+    display: flex;
+    align-items: center;
+}
+.nav-manu li{
+    /* border: solid red; */
+    width: 105px;
+}
+.nav-manu .nav-link-container{
+    width: fit-content;
+    margin: auto;
+}
+#about-us-nav-link{
+    margin-right: auto;
+}
+.nav-manu .nav-link{
+    text-transform: uppercase;
+    color: #0032a0;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+}
+.nav-manu .growing-line{
+    background-color: #0032a0;
+    height: 2px;
+    width: 0;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-manu .nav-link:hover{
+    font-weight: 700;
+}
+.nav-manu .nav-link:hover + .growing-line{
+    width: 100%;
+}
+
+.nav-img{
+    height: 40px;
+    margin-left: 1rem;
+    fill: #0032a0;
+    cursor: pointer;
+}
+.nav-img:hover{
+    fill: #8397c6;
+}
