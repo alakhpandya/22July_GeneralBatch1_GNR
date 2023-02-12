@@ -24,9 +24,20 @@ a{
 ul{
     list-style: none;
 }
+.btn{
+    color: white;
+    background-color: #0032a0;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 0.5rem 2.5rem;
+    border-radius: 1.5em;
+}
 
-
-
+.btn-white{
+    background-color: white;
+    color: #0032a0;
+}
 
 /* ----------------------------- Navbar ----------------------------- */
 
@@ -90,4 +101,56 @@ ul{
 }
 .nav-img:hover{
     fill: #8397c6;
+}
+
+
+/* ----------------------------- Carousel ----------------------------- */
+
+.item{
+    position: relative;
+}
+.item .sticker{
+    position: absolute;
+}
+#sticker1{
+    bottom: 50px;
+    right: 50px;
+}
+#sticker2{
+    bottom: 20px;
+    left: 250px;
+}
+#sticker3, #sticker5{
+    max-width: 450px;
+    bottom: 50%;
+    text-align: center;
+    padding: 1.5rem;
+    transform: translateY(50%);
+}
+#sticker3{
+    left: 10%;
+    color: white;
+}
+#sticker3 h3{
+    font-size: 2rem;
+    text-shadow: black 0px 0px 5px;
+    margin-bottom: 1rem;
+}
+#sticker3 p{
+    font-size: 1.3rem;
+    text-shadow: black 0px 0px 5px;
+    margin-bottom: 2rem;
+}
+#sticker4{
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#sticker5{
+    left: 5%;
+}
+#sticker5 p{
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    font-size: 1.1rem;
 }

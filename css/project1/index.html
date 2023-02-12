@@ -5,51 +5,100 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- ----------------------------- Owl Carousel CSS ----------------------------- -->
+    <link rel="stylesheet" href="/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/css/owl.theme.default.min.css">
+
     <!-- ----------------------------- Custom CSS ----------------------------- -->
     <link rel="stylesheet" href="/css/style.css">
 
     <title>Document</title>
 </head>
 <body>
+    <div class="header">
+        <!-- --------------------- Navbar --------------------- -->
+        <div class="navbar">
+            <div class="nav-left">
+                <a href="/index.html"><img class="nav-brand-logo" src="/images/logo_nivea_blue.png" alt=""></a>
+                <ul class="nav-manu">
+                    <li>
+                        <div class="nav-link-container">
+                            <a class="nav-link" href="#">Products</a>
+                            <div class="growing-line"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav-link-container">
+                            <a class="nav-link" href="#">Advice</a>
+                            <div class="growing-line"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="about-us-nav-link" class="nav-link-container">
+                            <a class="nav-link" href="#">About Us</a>
+                            <div class="growing-line"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <!-- Search icon -->
+                <svg class="nav-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.718,31.522,22.4,23.207a.8.8,0,0,1-.014-1.116,11.957,11.957,0,1,0-3.463,2.542.8.8,0,0,1,.7,1.439,13.613,13.613,0,1,1,4.442-3.459l7.781,7.779Z"></path></svg> 
 
-    <!-- 
-        
-    -->
-    <!--     
-     -->
+                <!-- Action icon -->
+                <svg class="nav-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M16.2,32A16,16,0,0,1,9.9,1.3l.5-.2a.841.841,0,0,1,1.1.4.841.841,0,0,1-.4,1.1l-.5.2A14.358,14.358,0,1,0,21.9,29.2a14.515,14.515,0,0,0,8.3-9.6h0A5.164,5.164,0,0,1,25,14.4v-.3a6.6,6.6,0,0,1-7.1-6V7.6a8.807,8.807,0,0,1,.2-1.7,4.08,4.08,0,0,1-3.5-4A3.6,3.6,0,0,1,14.8.8a.747.747,0,0,1,1-.5.747.747,0,0,1,.5,1,1.7,1.7,0,0,0-.1.7,2.476,2.476,0,0,0,2.5,2.5h.5a.829.829,0,0,1,.8.3,2.805,2.805,0,0,1-.1.5,5.45,5.45,0,0,0-.5,2.2,5,5,0,0,0,4.9,5,6.753,6.753,0,0,0,1.4-.2.8.8,0,0,1,1,.6v.5a3.528,3.528,0,0,0,3.4,4.7,1.949,1.949,0,0,0,.8-.1.618.618,0,0,1,.7.2.663.663,0,0,1,.2.7A15.8,15.8,0,0,1,16.2,32Z"></path><circle cx="9.5" cy="12.2" r="3.5"></circle><path d="M19,15.3a2.5,2.5,0,1,0,2.5,2.5A2.476,2.476,0,0,0,19,15.3Z"></path><path d="M10.5,19.2a2.9,2.9,0,1,0,2.9,2.9A2.9,2.9,0,0,0,10.5,19.2Z"></path><path d="M18.3,23.3a1.8,1.8,0,1,0,1.8,1.8A1.729,1.729,0,0,0,18.3,23.3Z"></path><path d="M28.8,4.6a1.8,1.8,0,0,0,0,3.6,1.733,1.733,0,0,0,1.8-1.8A1.793,1.793,0,0,0,28.8,4.6Z"></path></svg>
 
-    <div class="navbar">
-        <div class="nav-left">
-            <a href="/index.html"><img class="nav-brand-logo" src="/images/logo_nivea_blue.png" alt=""></a>
-            <ul class="nav-manu">
-                <li>
-                    <div class="nav-link-container">
-                        <a class="nav-link" href="#">Products</a>
-                        <div class="growing-line"></div>
-                    </div>
-                </li>
-                <li>
-                    <div class="nav-link-container">
-                        <a class="nav-link" href="#">Advice</a>
-                        <div class="growing-line"></div>
-                    </div>
-                </li>
-                <li>
-                    <div id="about-us-nav-link" class="nav-link-container">
-                        <a class="nav-link" href="#">About Us</a>
-                        <div class="growing-line"></div>
-                    </div>
-                </li>
-            </ul>
+            </div>
         </div>
-        <div class="nav-right">
-            <!-- Search icon -->
-            <svg class="nav-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.718,31.522,22.4,23.207a.8.8,0,0,1-.014-1.116,11.957,11.957,0,1,0-3.463,2.542.8.8,0,0,1,.7,1.439,13.613,13.613,0,1,1,4.442-3.459l7.781,7.779Z"></path></svg> 
 
-            <!-- Action icon -->
-            <svg class="nav-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M16.2,32A16,16,0,0,1,9.9,1.3l.5-.2a.841.841,0,0,1,1.1.4.841.841,0,0,1-.4,1.1l-.5.2A14.358,14.358,0,1,0,21.9,29.2a14.515,14.515,0,0,0,8.3-9.6h0A5.164,5.164,0,0,1,25,14.4v-.3a6.6,6.6,0,0,1-7.1-6V7.6a8.807,8.807,0,0,1,.2-1.7,4.08,4.08,0,0,1-3.5-4A3.6,3.6,0,0,1,14.8.8a.747.747,0,0,1,1-.5.747.747,0,0,1,.5,1,1.7,1.7,0,0,0-.1.7,2.476,2.476,0,0,0,2.5,2.5h.5a.829.829,0,0,1,.8.3,2.805,2.805,0,0,1-.1.5,5.45,5.45,0,0,0-.5,2.2,5,5,0,0,0,4.9,5,6.753,6.753,0,0,0,1.4-.2.8.8,0,0,1,1,.6v.5a3.528,3.528,0,0,0,3.4,4.7,1.949,1.949,0,0,0,.8-.1.618.618,0,0,1,.7.2.663.663,0,0,1,.2.7A15.8,15.8,0,0,1,16.2,32Z"></path><circle cx="9.5" cy="12.2" r="3.5"></circle><path d="M19,15.3a2.5,2.5,0,1,0,2.5,2.5A2.476,2.476,0,0,0,19,15.3Z"></path><path d="M10.5,19.2a2.9,2.9,0,1,0,2.9,2.9A2.9,2.9,0,0,0,10.5,19.2Z"></path><path d="M18.3,23.3a1.8,1.8,0,1,0,1.8,1.8A1.729,1.729,0,0,0,18.3,23.3Z"></path><path d="M28.8,4.6a1.8,1.8,0,0,0,0,3.6,1.733,1.733,0,0,0,1.8-1.8A1.793,1.793,0,0,0,28.8,4.6Z"></path></svg>
-
+        <!-- --------------------- Carousel --------------------- -->
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img src="/images/carousel1.webp" alt="">
+                <div class="sticker" id="sticker1">
+                    <a class="btn" href="#">Learn More</a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/images/carousel2.webp" alt="">
+                <div class="sticker" id="sticker2">
+                    <a class="btn" href="#">Learn More</a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/images/carousel3.webp" alt="">
+                <div class="sticker" id="sticker3">
+                    <h3>Sustainability at Nivea</h3>
+                    <p>We're committed to making a positive impact on the world</p>
+                    <a class="btn" href="#">Learn More</a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/images/carousel4.webp" alt="">
+                <div class="sticker" id="sticker4">
+                    <a class="btn btn-white" href="#">Learn More</a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/images/carousel5.webp" alt="">
+                <div class="sticker" id="sticker5">
+                    <p>We believe that increasing human touch will change the world for the better</p>
+                    <a class="btn" href="#">Learn More</a>
+                </div>
+            </div>
         </div>
+
+
     </div>
 </body>
+
+<!-- ----------------------------- jQuery ----------------------------- -->
+<script src="/js/jQuery3_6_3.js"></script>
+<!-- ----------------------------- Owl Carousel JS ----------------------------- -->
+<script src="/js/owl.carousel.min.js"></script>
+<!-- ----------------------------- Custom JS ----------------------------- -->
+<script src="/js/main.js"></script>
 </html>
+<!-- 
+    Next Class: getting the navigation arrows in place & use of fontawesome
+ -->
