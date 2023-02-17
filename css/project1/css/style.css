@@ -17,6 +17,7 @@
 
 body{
     font-family: "Open Sans", sans-serif;
+    color: #0032a0;
 }
 a{
     text-decoration: none;
@@ -105,7 +106,9 @@ ul{
 
 
 /* ----------------------------- Carousel ----------------------------- */
-
+.carousel-container{
+    position: relative;
+}
 .item{
     position: relative;
 }
@@ -153,4 +156,64 @@ ul{
     margin-bottom: 1.5rem;
     font-weight: 600;
     font-size: 1.1rem;
+}
+
+.owl-nav{
+    /* background-color: navy; */
+    position: absolute;
+    width: 95%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    justify-content: space-between;
+    z-index: 500;
+}
+.owl-prev, .owl-next{
+    font-size: 3rem;
+    background-color: white;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.owl-prev:hover, .owl-next:hover{
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+
+/*  */
+.title{
+    font-size: 2rem;
+    font-weight: 700;
+    width: fit-content;
+    margin: 4rem auto 2rem;
+}
+.sections{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+.section-card svg{
+    fill: #0032a0;
+    height: 100px;
+    margin-bottom: 0.5rem;
+}
+.section-card a{
+    color: #0032a0;
+}
+.section-card a:hover{
+    opacity: 0.7;
+}
+.section-title span{
+    text-transform: uppercase;
+    font-weight: 700;
 }
