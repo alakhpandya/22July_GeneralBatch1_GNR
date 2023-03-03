@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .boxes{
+        border: solid green;
+        background-color: lightgreen;
+        height: 250px;
+        width: 250px;
+    }
+
+/* 
+ when width is minimum 1250 px
+ when width is maximum 1250 px
+*/
+    @media (max-width: 1250px){
+        .boxes{
+            height: 200px;
+            width: 200px;
+            background-color: lightblue;
+            border-color: navy;
+        }
+    }
+    
+    @media (max-width: 1000px){
+        .boxes{
+            height: 150px;
+            width: 150px;
+            background-color: pink;
+            border-color: maroon;
+        }
+    }
+    
+    @media (max-width: 750px){
+        .boxes{
+            height: 100px;
+            width: 100px;
+        }
+    }
+    @media (max-width: 750px){
+        .container{
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+        }
+        .boxes{
+            width: 300px;
+            height: 300px;
+        }
+    }
+    @media (max-width: 750px){
+        .boxes{
+            width: 250px;
+            height: 250px;
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="boxes" id="box1">Box 1</div>
+        <div class="boxes" id="box2">Box 2</div>
+        <div class="boxes" id="box3">Box 3</div>
+        <div class="boxes" id="box4">Box 4</div>
+        <div class="boxes" id="box5">Box 5</div>
+        <!-- <div class="boxes" id="box6">Box 6</div>
+        <div class="boxes" id="box7">Box 7</div>
+        <div class="boxes" id="box8">Box 8</div>
+        <div class="boxes" id="box9">Box 9</div>
+        <div class="boxes" id="box10">Box 10</div> -->
+    </div>
+</body>
+</html>
