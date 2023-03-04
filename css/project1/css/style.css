@@ -42,13 +42,17 @@ ul{
 
 /* ----------------------------- Navbar ----------------------------- */
 
-.navbar{
+.navbar, .navbar-mobile{
     /* background-color: lightcoral; */
     height: 70px;
     padding: 0 12vw 0 14vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.navbar-mobile{
+    display: none;
+    padding: 0 2rem;
 }
 .nav-left{
     display: flex;
@@ -103,7 +107,10 @@ ul{
 .nav-img:hover{
     fill: #8397c6;
 }
-
+.navbar-mobile .bar-icon{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
 
 /* ----------------------------- Carousel ----------------------------- */
 .carousel-container{
@@ -189,13 +196,13 @@ ul{
     opacity: 1;
 }
 
-
+ 
 /*  */
 .title{
     font-size: 2rem;
     font-weight: 700;
-    width: fit-content;
     margin: 4rem auto 2rem;
+    text-align: center;
 }
 .sections{
     display: flex;
@@ -216,4 +223,26 @@ ul{
 .section-title span{
     text-transform: uppercase;
     font-weight: 700;
+}
+
+
+
+@media (max-width: 750px){
+    .navbar{
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 600px){
+    .navbar{
+        display: none;
+    }
+    .navbar-mobile{
+        display: flex;
+    }
+    .sections{
+        flex-direction: column;
+        align-items: center;
+        gap: 5rem;
+    }
 }
