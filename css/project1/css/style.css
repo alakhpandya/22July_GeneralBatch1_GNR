@@ -42,7 +42,7 @@ ul{
 
 /* ----------------------------- Navbar ----------------------------- */
 
-.navbar, .navbar-mobile{
+.navbar, .navbar-mobile-upper{
     /* background-color: lightcoral; */
     height: 70px;
     padding: 0 12vw 0 14vw;
@@ -52,12 +52,28 @@ ul{
 }
 .navbar-mobile{
     display: none;
-    padding: 0 2rem;
+    height: 70px;
+    overflow: hidden;
 }
+.nav-expand{
+    width: 100%;
+    text-align: center;
+    padding: 1rem 3rem;
+}
+
 .nav-left{
     display: flex;
     align-items: center;
     gap: 4rem;
+}
+.nav-expand-item{
+    border-bottom: solid grey 1px;
+    margin-bottom: 1rem;
+}
+.nav-expand-item a{
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #0032a0;
 }
 .nav-brand-logo{
     height: 50px;
@@ -238,7 +254,17 @@ ul{
         display: none;
     }
     .navbar-mobile{
+        display:  block;
+        transition: 0.5s;
+    }
+    .show-hide{
+        height: 17.5rem;
+    }
+    .navbar-mobile-upper{
+        /* height: 70px;
         display: flex;
+        align-items: center;
+        justify-content: space-between; */
     }
     .sections{
         flex-direction: column;
