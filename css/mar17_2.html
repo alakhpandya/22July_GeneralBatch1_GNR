@@ -1,0 +1,58 @@
+<!-- Box - Shadow -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        box-sizing: border-box;
+        /* border: solid 1px; */
+        height: 300px;
+        width: 250px;
+        margin: 5rem auto;
+
+        /* box-shadow: x-offset y-offset; */
+        /* box-shadow: 50px 100px; */
+        /* box-shadow: -50px -10px; */
+        
+        /* box-shadow: x-offset y-offset blur-radius; */
+        /* box-shadow: 10px 10px 25px; */
+        /* box-shadow: 0px 0px 10px; */
+
+        /* box-shadow: x-offset y-offset blur-radius spread-radius; */
+        /* box-shadow: 0px 0px 25px 5px; */
+
+        /* box-shadow: x-offset y-offset blur-radius spread-radius color; */
+        /* box-shadow: 0px 0px 3px 2px #8c5aef; */
+        /* box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2); */
+
+
+        /* multicolor shadow */
+        box-shadow: 0px 0px 3px 4px blue, 
+        0px 0px 3px 8px red,
+        0px 0px 3px 13px #8c5aef;
+
+        padding-top: 110px;
+    }
+    p{
+        text-align: center;
+        font-family: cursive;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: white;
+
+        /* text-shadow doesn't have spread-radius */
+        /* text-shadow: 2px 2px grey; */
+        text-shadow: 0px 0px 2px black, 0px 0px 10px rgb(249, 65, 14);
+    }
+</style>
+<body>
+    <div class="box">
+        <p>CSS @ Royal!</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        padding: 1rem;
+        font-family: sans-serif;
+        background-color: aliceblue;
+    }
+    .container{
+        display: grid;
+        gap: 1rem;
+        /* grid-template-columns: 450px 450px 450px; */
+        /* grid-template-columns: 350px 350px 350px 350px; */
+        /* grid-template-columns: 700px 350px 350px; */
+        /* grid-template-columns: 23vw 23vw 23vw 23vw; */
+        /* grid-template-columns: repeat(10, 140px); */
+
+        /* grid-template-columns: 1fr 1fr 1fr; */
+        grid-template-columns: repeat(4, 1fr);
+
+        /* grid-template-rows: 1fr 1fr; */
+    }
+
+    .card{
+        padding: 1rem;
+        border-radius: 10px;
+    }
+    .user{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    .user .profile-pic{
+        border: solid;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    .user .name{
+        font-size: 1.2rem;
+    }
+    .title{
+        margin: 1rem 0;
+    }
+    #item1{
+        background-color: blueviolet;
+        grid-column: span 2;
+    }
+    #item2{
+        background-color: darkslategray;
+    }
+    #item3{
+        grid-row: span 2;
+    }
+    #item5{
+        background-color: #222;
+        grid-column: span 2;
+    }
+    #item1, #item2, #item5{
+        color: white;
+    }
+    #item3, #item4{
+        background-color: white;
+    }
+</style>
+<body>
+    <div class="container">
+    <div id="item1" class="card">
+        <div class="user">
+            <div class="profile-pic"></div>
+            <div class="user-details">
+                <h1 class="name">Lorem, ipsum.</h1>
+                <p class="designation">Lorem, ipsum.</p>
+            </div>
+        </div>
+        <h2 class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus enim aperiam explicabo fugit accusantium, iste libero esse labore debitis reiciendis consequuntur harum nostrum provident mollitia, nulla minima!</h2>
+        <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quam saepe vel officia reiciendis numquam laboriosam tenetur illum rerum, maxime quos fuga velit a quod laborum nihil expedita dolor odio accusantium ratione porro perferendis neque. Asperiores necessitatibus reiciendis accusantium, non eaque sequi sint in ad quaerat. Consequuntur, a architecto quisquam et perspiciatis.</p>
+    </div>
+    <div id="item2" class="card">
+        <div class="user">
+            <div class="profile-pic"></div>
+            <div class="user-details">
+                <h1 class="name">Nulla, repellat!</h1>
+                <p class="designation">Quos, temporibus.</p>
+            </div>
+        </div>
+        <h2 class="title">Et quo repudiandae aspernatur! Quae numquam itaque deserunt.</h2>
+        <p class="message">Alias atque corrupti magni molestiae. Voluptatem temporibus esse nihil pariatur iusto, dolorem enim voluptates quisquam, ab excepturi, consequuntur veritatis eius similique laboriosam! Nulla, nemo enim, illum atque delectus voluptatibus sunt sed non velit.</p>
+    </div>
+    <div id="item3" class="card">
+        <div class="user">
+            <div class="profile-pic"></div>
+            <div class="user-details">
+                <h1 class="name">Excepturi, placeat.</h1>
+                <p class="designation">Nostrum, repudiandae?</p>
+            </div>
+        </div>
+        <h2 class="title">Est autem at laborum quas nostrum aliquid!</h2>
+        <p class="message">Id veniam excepturi consequatur ad possimus cumque temporibus sapiente? Molestiae labore unde veritatis pariatur, ratione odit eos saepe sint dolor voluptas quos deleniti! Repellat quia esse dolorem pariatur eaque corporis dignissimos dolore ex numquam, odio fugiat nihil distinctio? Perspiciatis blanditiis pariatur ea dignissimos, doloribus animi, neque vitae omnis, repellendus corporis optio quaerat? Dolore iste laborum amet. Quibusdam voluptatum rem, nobis itaque iste sequi debitis repudiandae officiis aliquam veniam explicabo nam adipisci sunt illum, deleniti optio nihil earum. Consequatur ipsa, eum obcaecati soluta itaque voluptates natus in fugit similique, velit ipsam.</p>
+    </div>
+    <div id="item4" class="card">
+        <div class="user">
+            <div class="profile-pic"></div>
+            <div class="user-details">
+                <h1 class="name">Rerum, error?</h1>
+                <p class="designation">Nemo, fugiat?</p>
+            </div>
+        </div>
+        <h2 class="title">Nostrum id cupiditate laborum repellat consequuntur.</h2>
+        <p class="message">Id, asperiores sit? Deserunt quo vero cum. Sint vero amet, magnam quis necessitatibus provident similique natus temporibus nobis modi sit!</p>
+    </div>
+    <div id="item5" class="card">
+        <div class="user">
+            <div class="profile-pic"></div>
+            <div class="user-details">
+                <h1 class="name">Illo, ullam!</h1>
+                <p class="designation">Sequi, totam?</p>
+            </div>
+        </div>
+        <h2 class="title">Quisquam beatae recusandae numquam reprehenderit labore minima quibusdam cupiditate ipsum omnis eaque vel alias laboriosam voluptatem dolores minus nulla, excepturi asperiores.</h2>
+        <p class="message">Saepe suscipit nihil dolor, amet est veniam quia architecto asperiores numquam accusamus reiciendis error quod ipsa accusantium ullam ex autem! Id corrupti voluptatibus assumenda velit modi, maiores beatae minus dolore accusamus perspiciatis, rerum esse repudiandae totam nostrum amet numquam dolorum libero, distinctio temporibus ipsa!</p>
+    </div>
+</div>
+</body>
+</html>
