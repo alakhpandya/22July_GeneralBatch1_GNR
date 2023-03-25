@@ -1,0 +1,165 @@
+/* 
+:root{
+    --bgColor : antiquewhite;
+    --btnBgColor : navy;
+    --standard_margin : 23px;
+    --primary-fonts : Verdana, Geneva, Tahoma, sans-serif;
+} 
+*/
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Poppins:wght@400;700;800&display=swap');
+
+
+/* -------------------------- Variables -------------------------- */
+:root{
+    --bg-color : antiquewhite;
+    --dark1 : navy;
+    --light1 : white;
+
+    --title-fonts : 'Lora', serif;
+    --primary-fonts : 'Poppins', sans-serif;
+
+}
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* -------------------------- Global -------------------------- */
+body{
+    background-color: var(--bg-color);
+    font-family: var(--primary-fonts);
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+
+/* -------------------------- Navbar -------------------------- */
+nav{
+    background-color: var(--dark1);
+    height: 5rem;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.nav-full{
+    height: 12rem;
+}
+.nav-shrink{
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5rem;
+}
+nav .brand-logo, nav .bar-icon{
+    color: var(--light1);
+    font-size: 2rem;
+}
+nav .brand-logo{
+    font-family: var(--title-fonts);
+    font-style: italic;
+    font-weight: 700;
+}
+/* .navbar .bar-icon{
+
+} */
+.nav-expand{
+    text-align: right;
+    padding: 1rem 30px 1px;
+}
+.nav-expand .nav-menu{
+    margin-bottom: 1rem;
+}
+.nav-expand .nav-link{
+    font-size: 1.3rem;
+    color: var(--light1);
+    position: relative;
+    border: 1px solid var(--dark1);
+    padding: 3px 10px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.nav-link:hover{
+    /* bottom: 2px; */
+    border: 1px solid var(--light1);
+    background-color: var(--light1);
+    color: var(--dark1);
+}
+
+/* -------------------------- Form -------------------------- */
+.form-container{
+    background-color: var(--dark1);
+    border-radius: 20px;
+    width: 90%;
+    margin: 20vh auto 0;
+    padding: 2rem 1rem;
+    color: var(--light1);
+}
+.form-container .login-signup-form{
+    border: solid var(--light1);
+    border-radius: 15px;
+    padding: 2rem 1rem;
+    position: relative;
+}
+.login-signup-form .form-title{
+    font-size: 2rem;
+    font-family: var(--title-fonts);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(10px, -58%);
+    background-color: var(--dark1);
+    padding: 0 2px;
+}
+.login-signup-form .input-box{
+    margin-bottom: 1rem;
+    position: relative;
+}
+.login-signup-form .input-box input{
+    height: 2.5rem;
+    width: 100%;
+    background-color: var(--dark1);
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--bg-color);
+}
+.login-signup-form .input-box label{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+}
+
+
+
+
+
+/* -------------------------- Media Queries -------------------------- */
+@media (min-width : 600px){
+    nav .bar-icon{
+        display: none;
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .nav-expand{
+        display: flex;
+        padding: 0 30px;
+        gap: 1.5rem;
+    }
+    .nav-expand .nav-menu{
+        margin-bottom: 0;
+    }
+}
+
+
+
+
+
+
