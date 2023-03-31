@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .square{
+        width: 50px;
+        height: 50px;
+        background-color: greenyellow;
+        position: absolute;
+        top: 50px;
+        left: 20px;
+        /* animation-name: moveBox; */
+        animation-duration: 4s;
+        /* animation-iteration-count: 3; */
+        animation-iteration-count: infinite;
+        /* animation-play-state: paused; */
+
+        /* animation-name: encircleBox; */
+    }
+
+    @keyframes moveBox{
+        from{
+            top: 50px;
+            left: 20px;
+        }
+        to{
+            top: 350px;
+            left: 20px;
+        }
+    }
+
+    @keyframes encircleBox{
+        0%{
+            top: 50px;
+            left: 20px;
+        }
+        25%{
+            top: 350px;
+            left: 20px;
+            border-radius: 25%;
+            background-color: green;
+        }
+        50%{
+            top: 350px;
+            left: 370px;
+            border-radius: 50%;
+            background-color: yellow;
+        }
+        75%{
+            top: 50px;
+            left: 370px;
+            border-radius: 25%;
+            background-color: brown;
+        }
+        100%{
+            top: 50px;
+            left: 20px;
+        }
+    }
+
+    .progress-bar{
+        height: 50px;
+        width: 1%;
+        position: absolute;
+        top: 150px;
+        background-color: red;
+    }
+    .progress-bar:hover{
+        /* animation-name: progress;
+        animation-duration: 5s;
+        animation-timing-function: steps(1); */
+
+        animation-name: progress_updated;
+        animation-duration: 5s;
+        animation-timing-function: steps(10);
+    }
+
+    @keyframes progress{
+        0%{
+            width: 1%;
+        }
+        10%{
+            width: 10%;
+        }
+        20%{
+            width: 20%;
+        }
+        30%{
+            width: 30%;
+        }
+        40%{
+            width: 40%;
+        }
+        50%{
+            width: 50%;
+        }
+        60%{
+            width: 60%;
+        }
+        70%{
+            width: 70%;
+        }
+        80%{
+            width: 80%;
+        }
+        90%{
+            width: 90%;
+        }
+        100%{
+            width: 100%;
+        }
+    }
+    @keyframes progress_updated{
+        0%{
+            width: 1%;
+        }
+        100%{
+            width: 100%;
+        }
+    }
+</style>
+<body>
+    <button onclick="document.querySelector('.square').style.animationPlayState = 'running'">Play</button>
+    <button onclick="document.querySelector('.square').style.animationPlayState = 'paused'">Pause</button>
+    <div class="square"></div>
+
+    <div class="progress-bar"></div>
+</body>
+</html>
